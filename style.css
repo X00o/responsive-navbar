@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.navbar {
+  background: linear-gradient(to right, #fff, #388ace);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 131px;
+  margin: 2px 64px;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    color: #fff;
+    cursor: pointer;
+    display:none;
+}
+.nav {
+  /* display: flex; */
+  /* flex: 1; */
+  /* text-align: right; */
+  /* margin: 9px 17px; */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 21px;
+  /* border: 2px solid #fff; */
+  padding: 0px 18px;
+  border-radius: 3px;
+  transition: all 0.4s ease-out;
+}
+.nav a:hover,
+.nav a:focus {
+  background: #fff;
+  color: #68b1ec;
+}
+#click{
+    display: none;
+}
+
+@media (max-width: 940px) {
+  .nav {
+    position: fixed;
+    top:  39px;
+    left: -100%;
+    background:linear-gradient(to right, #fff, #0b82e4);
+    height: 100vh;
+    width: 100%;
+    transition: all 0.5s ease;
+    text-align: center;
+
+  }
+  #click:checked ~.nav {
+      left: 0%;
+  }
+  .nav a {
+    display: block;
+    margin: 60px 0;
+    font-size: 30px;
+    transition: all 0.5s ease-in;
+  }
+  .nav a:hover {
+    color: rgb(0, 0, 0);
+    background: none;
+  }
+  .fa-bars:before {
+    margin: 0px 28px;
+    display:block;
+}
+}
