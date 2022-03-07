@@ -52,7 +52,7 @@
 @media (max-width: 940px) {
   .nav {
     position: fixed;
-    top:  39px;
+    top:  37px;
     left: -100%;
     background:linear-gradient(to right, #fff, #0b82e4);
     height: 100vh;
